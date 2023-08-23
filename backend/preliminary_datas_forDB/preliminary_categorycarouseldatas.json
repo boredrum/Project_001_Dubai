@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "Townhouse",
+    "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+  },
+  {
+    "id": 2,
+    "type": "Villa",
+    "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+  },
+  {
+    "id": 3,
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+  },
+  {
+    "id": 4,
+    "type": "Apartments",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+  },
+  {
+    "id": 2,
+    "type": "Villa",
+    "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+  },
+  {
+    "id": 3,
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+  },
+  {
+    "id": 4,
+    "type": "Apartments",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+  },
+  {
+    "id": 1,
+    "type": "Townhouse",
+    "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+  },
+  {
+    "id": 4,
+    "type": "Apartments",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+  },
+  {
+    "id": 3,
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+  },
+  {
+    "id": 2,
+    "type": "Villa",
+    "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+  },
+  {
+    "id": 1,
+    "type": "Townhouse",
+    "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+  }
+]

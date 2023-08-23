@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810db"
+  },
+  "id": 1,
+  "type": "Townhouse",
+  "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810dc"
+  },
+  "id": 2,
+  "type": "Villa",
+  "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810dd"
+  },
+  "id": 3,
+  "type": "Commercial",
+  "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810de"
+  },
+  "id": 4,
+  "type": "Apartments",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810df"
+  },
+  "id": 2,
+  "type": "Villa",
+  "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e0"
+  },
+  "id": 3,
+  "type": "Commercial",
+  "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e1"
+  },
+  "id": 4,
+  "type": "Apartments",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e2"
+  },
+  "id": 1,
+  "type": "Townhouse",
+  "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e3"
+  },
+  "id": 4,
+  "type": "Apartments",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Consequat molestie integer aliquam consectetur. Faucibus vitaedui massa tellus magna sit."
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e4"
+  },
+  "id": 3,
+  "type": "Commercial",
+  "image": "http://localhost:3001/images/category_carousel_data/image_commercial.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e5"
+  },
+  "id": 2,
+  "type": "Villa",
+  "image": "http://localhost:3001/images/category_carousel_data/image_villa.png"
+},
+{
+  "_id": {
+    "$oid": "64e24e73d75601ea035810e6"
+  },
+  "id": 1,
+  "type": "Townhouse",
+  "image": "http://localhost:3001/images/category_carousel_data/image_townhous.png"
+}]

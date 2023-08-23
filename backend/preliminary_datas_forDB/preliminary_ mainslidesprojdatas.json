@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "type": "Villas",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image1.png"
+  },
+  {
+    "id": 2,
+    "name": "Dubai",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit."
+  },
+  {
+    "id": 3,
+    "type": "Houses",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image3.png"
+  },
+  {
+    "id": 4,
+    "type": "Villas",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image4.png"
+  },
+  {
+    "id": 2,
+    "name": "Dubai",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit."
+  },
+  {
+    "id": 4,
+    "type": "Villas",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image4.png"
+  },
+  {
+    "id": 1,
+    "type": "Villas",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image1.png"
+  },
+  {
+    "id": 2,
+    "name": "Dubai",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit."
+  },
+  {
+    "id": 1,
+    "type": "Villas",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image1.png"
+  },
+  {
+    "id": 3,
+    "type": "Houses",
+    "image": "http://localhost:3001/images/main_slides_proj_data/image3.png"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture1.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 2,
+    "priority": "top",
+    "type": "Villa",
+    "image": "http://localhost:3001/images/category_paginator_data/picture2.png",
+    "name": "Dubai Hills Estate",
+    "description": "Al Barsha South, Downtown Dubai are two popular areas that lie close to this neighbourhood. "
+  },
+  {
+    "id": 3,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture3.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 4,
+    "priority": "common",
+    "type": "Appartments",
+    "image": "http://localhost:3001/images/category_paginator_data/picture4.png",
+    "name": "Luxury Living",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 5,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture5.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 6,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture6.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 7,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture7.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 8,
+    "priority": "common",
+    "type": "Appartments",
+    "image": "http://localhost:3001/images/category_paginator_data/picture8.png",
+    "name": "Luxury Living",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 9,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture9.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 10,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture10.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 11,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture11.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 12,
+    "priority": "common",
+    "type": "Appartments",
+    "image": "http://localhost:3001/images/category_paginator_data/picture12.png",
+    "name": "Luxury Living",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 1,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture1.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 2,
+    "priority": "top",
+    "type": "Villa",
+    "image": "http://localhost:3001/images/category_paginator_data/picture2.png",
+    "name": "Dubai Hills Estate",
+    "description": "Al Barsha South, Downtown Dubai are two popular areas that lie close to this neighbourhood. "
+  },
+  {
+    "id": 3,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture3.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 4,
+    "priority": "common",
+    "type": "Appartments",
+    "image": "http://localhost:3001/images/category_paginator_data/picture4.png",
+    "name": "Luxury Living",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 5,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture5.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 6,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture6.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 7,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture7.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 8,
+    "priority": "common",
+    "type": "Appartments",
+    "image": "http://localhost:3001/images/category_paginator_data/picture8.png",
+    "name": "Luxury Living",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 9,
+    "priority": "common",
+    "type": "Townhous",
+    "image": "http://localhost:3001/images/category_paginator_data/picture9.png",
+    "name": "Arabian Ranches",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  },
+  {
+    "id": 10,
+    "priority": "common",
+    "type": "Commercial",
+    "image": "http://localhost:3001/images/category_paginator_data/picture10.png",
+    "name": "Shell and Core",
+    "description": "The launch of this community enabled expats to own a luxurious property in Dubai."
+  }
+]
