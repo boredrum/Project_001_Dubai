@@ -5,6 +5,12 @@ import BookConsultaion from "./BookConsultation";
 
 function Footer() {
 
+
+  const [isBuyMenuOpen, setIsBuyMenuOpen] = useState(false);
+  const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
+  const [isInfoMenuOpen, setIsInfoMenuOpen] = useState(false);
+  const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
+
   const [isBookConsultOpen, setIsBookConsultOpen] = useState(false);
 
   return (
@@ -19,8 +25,8 @@ function Footer() {
         </Link>
       </div>
       <div id="footer_menu">
-        <div id="footer_buy">
-          <h3>
+        <div id="footer_buy" >
+          <h3 onClick={() => setIsBuyMenuOpen(!isBuyMenuOpen)}>
             Buy
           </h3>
           <a href="#">
@@ -41,9 +47,27 @@ function Footer() {
           <a href="#">
             Villa in Dubai
           </a>
+          {isBuyMenuOpen ? 
+            <div className="active_block">
+              <a href="#">
+                House in Dubai
+              </a>
+              <a href="#">
+                Apartments in Dubai
+              </a>
+              <a href="#">
+                Loft in Dubai
+              </a>
+              <a href="#">
+                Penthouse in Dubai
+              </a>
+              <a href="#">
+                Villa in Dubai
+              </a>
+            </div> : null}
         </div>
         <div id="footer_services">
-          <h3>
+          <h3 onClick={() => setIsServicesMenuOpen(!isServicesMenuOpen)}>
             Services
           </h3>
           <a href="#">
@@ -64,9 +88,30 @@ function Footer() {
           <a href="#">
             Moving to Dubai, UAE
           </a>
+          {isServicesMenuOpen ? 
+            <div className="active_block">
+              <a href="#">
+                Property management in Dubai, UAE
+              </a>
+              <a href="#">
+                Sell property in Dubai, UAE
+              </a>
+              <a href="#">
+                Rent property in Dubai, UAE
+              </a>
+              <a href="#">
+                Investments in Dubai, UAE
+              </a>
+              <a href="#">
+                Real estate for cryptocurrency in Dubai
+              </a>
+              <a href="#">
+                Moving to Dubai, UAE
+              </a>
+            </div> : null}
         </div>
         <div id="footer_info">
-          <h3>
+          <h3 onClick={() => setIsInfoMenuOpen(!isInfoMenuOpen)}>
             Information
           </h3>
           <a href="#">
@@ -87,9 +132,30 @@ function Footer() {
           <a href="#">
             Articles
           </a>
+          {isInfoMenuOpen ? 
+            <div className="active_block">
+              <a href="#">
+                Video
+              </a>
+              <a href="#">
+                Podcasts
+              </a>
+              <a href="#">
+                Laws
+              </a>
+              <a href="#">
+                Questions and answers
+              </a>
+              <a href="#">
+                Books
+              </a>
+              <a href="#">
+                Articles
+              </a>
+            </div> : null}
         </div>
         <div id="footer_about">
-          <h3>
+          <h3 onClick={() => setIsAboutMenuOpen(!isAboutMenuOpen)}>
             About company
           </h3>
           <a href="#">
@@ -107,6 +173,24 @@ function Footer() {
           <a href="#">
             Real estate agency
           </a>
+          {isAboutMenuOpen ? 
+            <div className="active_block">
+              <a href="#">
+                Jobs
+              </a>
+              <a href="#">
+                Story
+              </a>
+              <a href="#">
+                Licenses
+              </a>
+              <a href="#">
+                Why are we
+              </a>
+              <a href="#">
+                Real estate agency
+              </a>
+            </div> : null}
         </div>
         <div id="footer_contact">
           <h3>

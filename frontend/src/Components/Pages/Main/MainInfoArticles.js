@@ -1,6 +1,11 @@
 import React from "react";
+import { isWebpSupported } from "react-image-webp/dist/utils";
+
 import paulPhoto from "../../../Pictures/info_review_Paul.png";
 import robertPhoto from "../../../Pictures/info_review_Robert.png";
+
+import paulPhotowebp from "../../../Pictures/webp/info_review_Paul.webp";
+import robertPhotowebp from "../../../Pictures/webp/info_review_Robert.webp";
 
 function MainInfoArticles() {
   return (
@@ -34,7 +39,7 @@ function MainInfoArticles() {
       </div>
       <div id="info_review">
         <div>
-          <img src={paulPhoto} alt="Photo Paul" />
+          <img src={isWebpSupported ? paulPhotowebp : paulPhoto} alt="Photo Paul" />
           <h2>Paul</h2>
           <h3>
 						Owner in <span>Paul.com</span>
@@ -46,7 +51,7 @@ function MainInfoArticles() {
           </p>
         </div>
         <div>
-          <img src={robertPhoto} alt="Photo Robert" />
+          <img src={isWebpSupported ? robertPhotowebp : robertPhoto} alt="Photo Robert" />
           <h2>Robert</h2>
           <h3>
 						Founder in <span>Apple inc.</span>

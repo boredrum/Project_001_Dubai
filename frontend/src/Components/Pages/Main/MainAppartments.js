@@ -1,6 +1,11 @@
 import React from "react";
+import { isWebpSupported } from "react-image-webp/dist/utils";
+
 import appartmentsLeft from "../../../Pictures/main_appartments_block1.png";
 import appartmentsRight from "../../../Pictures/main_appartments_block2.png";
+
+import appartmentsLeftwebp from "../../../Pictures/webp/main_appartments_block1.webp";
+import appartmentsRightwebp from "../../../Pictures/webp/main_appartments_block2.webp";
 
 function MainAppartments() {
   return (
@@ -13,7 +18,7 @@ function MainAppartments() {
       </div>
       <div id="main_appartments">
         <div id="main_appartments_block1">
-          <img src={appartmentsLeft} alt="view of appartments"/>
+          <img src={isWebpSupported ? appartmentsLeftwebp : appartmentsLeft} alt="view of appartments"/>
           <p>
                 Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet 
                 commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet 
@@ -25,7 +30,7 @@ function MainAppartments() {
           </p>
         </div>
         <div id="main_appartments_block2">
-          <img src={appartmentsRight} alt="view of appartments"/>
+          <img src={isWebpSupported ? appartmentsRightwebp : appartmentsRight} alt="view of appartments"/>
           <p>
                 Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci 
                 feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum 

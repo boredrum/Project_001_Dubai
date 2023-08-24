@@ -49,7 +49,21 @@ module.exports = {
 			{
 				test: /\.(png|jpe?g|gif|svg)$/i,
 				type: "asset/resource",
+        
 			},
+      {
+        test: /\.(webp)$/,
+        type: "asset/resource",
+        use: [
+          {
+            loader: "webp-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/", // Change to your desired output folder
+            },
+          },
+        ],
+      },
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: "asset/resource",

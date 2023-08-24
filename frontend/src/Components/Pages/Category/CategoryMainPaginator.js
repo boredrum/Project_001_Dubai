@@ -7,8 +7,12 @@ function CategoryMainPaginator() {
   const dispatch = useDispatch();
   const categoryDatas = useSelector((state) => state.categoryDatas.mainCategoryItems);
 
+  const breakPointTablet = 768;
+  const breakPointPhone = 320;
+
   const [currentPage, setCurrentPage] = useState(1);
-  const blocksPerPage = 12;
+  const [blocksPerPage, setBlocksPerPage] = useState(12);
+  
   const lastIndex = currentPage * blocksPerPage;
   const firstIndex = lastIndex - blocksPerPage;
   const records = categoryDatas.slice(firstIndex, lastIndex);
@@ -39,6 +43,16 @@ function CategoryMainPaginator() {
       setCurrentPage(id);
     }
   };
+
+  useEffect(()=>{
+    if (window.innerWidth <= breakPointPhone){
+      setBlocksPerPage(2);
+    } else if(window.innerWidth <= breakPointTablet){
+      setBlocksPerPage(4);
+    } else {
+      setBlocksPerPage(12);
+    }
+  }, []);
 
   const maxVisiblePages = 6; // How many pages we want to see at the same time
   const pageNumbers = [];

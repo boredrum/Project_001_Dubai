@@ -12,6 +12,13 @@ function Contact() {
   return (
     <>
       <Header />
+      {window.innerWidth <= 768 ? 
+        <h2 id="contact_links">
+          <a href="/">Main</a>
+          <a href="#">Services</a>
+          <a href="#">Rent</a>
+          Furnished Apartments in Dubai
+        </h2> : null}
       <h1 id="contact_title">Contact</h1>
       <div id="map">
         {isMapModalConsultOpen && <ContactMapModal setIsMapModalConsultOpen={setIsMapModalConsultOpen} />}

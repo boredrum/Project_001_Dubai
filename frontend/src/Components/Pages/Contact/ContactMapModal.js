@@ -17,7 +17,7 @@ const ContactMapModal = ({setIsMapModalConsultOpen}) => {
 					Email: <a href="mailto:info@sparch.co">info@sparch.co</a>
         </h3>
         <h3>Follow us:</h3>
-        <h3>
+        <h3 id="map_modal_workHrs">
 					Work Hours:  <span>Monday - Friday : 08h00 - 17h30</span>
         </h3>
       </div>

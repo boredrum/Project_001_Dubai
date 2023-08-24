@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
+import { isWebpSupported } from "react-image-webp/dist/utils";
 import MainTopSliderNavBtns from "./MainTopSlider/MainTopSliderNavBtns";
 import BookConsultaion from "../../BookConsultation";
 import "swiper/scss";
@@ -11,11 +12,9 @@ import swiperImageSlide1 from "../../../Pictures/main_topSlider_image1.png";
 import swiperImageSlide2 from "../../../Pictures/main_topSlider_image2.jpg";
 import swiperImageSlide3 from "../../../Pictures/main_topSlider_image3.jpg";
 
-// import facebookLogo from "../../../Pictures/interface/Facebook.svg";
-// import twitterLogo from "../../../Pictures/interface/Facebook.svg";
-// import youtubeLogo from "../../../Pictures/interface/Facebook.svg";
-// import instagramLogo from "../../../Pictures/interface/Facebook.svg";
-// import linkedinLogo from "../../../Pictures/interface/Facebook.svg";
+import swiperImageSlide1webp from "../../../Pictures/webp/main_topSlider_image1.webp";
+import swiperImageSlide2webp from "../../../Pictures/webp/main_topSlider_image2.webp";
+import swiperImageSlide3webp from "../../../Pictures/webp/main_topSlider_image3.webp";
 
 const paginatorTxt = [
   { text: "Lorem Ipsum Dolorem apset" },
@@ -67,7 +66,7 @@ function MainTopSlider() {
           <a className="linkedin"  href="https://instagram.com/" />
         </div>
         <SwiperSlide>
-          <img src={swiperImageSlide1} alt="Dubai day view" />
+          <img src={isWebpSupported ? swiperImageSlide1webp : swiperImageSlide1} alt="Dubai day view" />
           <div className="main_slides_topSlider_swiper_slide_links"></div>
           <div className="main_slides_topSlider_swiper_slide_main">
             <div className="main_slides_topSlider_swiper_slide_main_rectangle"></div>
@@ -85,7 +84,7 @@ function MainTopSlider() {
           <MainTopSliderNavBtns />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiperImageSlide2} alt="Dubai day view" />
+          <img src={isWebpSupported ? swiperImageSlide2webp : swiperImageSlide2} alt="Dubai day view" />
           <div className="main_slides_topSlider_swiper_slide_links"></div>
           <div className="main_slides_topSlider_swiper_slide_main">
             <div className="main_slides_topSlider_swiper_slide_main_rectangle"></div>
@@ -103,7 +102,7 @@ function MainTopSlider() {
           <MainTopSliderNavBtns />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiperImageSlide3} alt="Dubai night view" />
+          <img src={isWebpSupported ? swiperImageSlide3webp : swiperImageSlide3} alt="Dubai night view" />
           <div className="main_slides_topSlider_swiper_slide_links"></div>
           <div className="main_slides_topSlider_swiper_slide_main">
             <div className="main_slides_topSlider_swiper_slide_main_rectangle"></div>

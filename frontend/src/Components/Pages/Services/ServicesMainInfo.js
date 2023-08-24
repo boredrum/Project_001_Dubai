@@ -18,13 +18,21 @@ function ServicesMainInfo() {
       <div id="services_topInfo">
         <div id="services_topInfo_links">
           <h2>
-            <a href="#">Main</a>
+            <a href="/">Main</a>
             <a href="#">Services</a>
             <a href="#">Rent</a>
 						Furnished Apartments in Dubai
           </h2>
         </div>
         <div id="services_topInfo_txt">
+          {window.innerWidth <= 768 ? (
+            <>
+              <h2>
+                <span>Service</span> Buying property in Dubai
+              </h2>
+              <h3>Real estate investment in Dubai, UAE</h3>
+            </>
+          ) : null}
           <div id="services_topInfo_txt_top">
             <p>
 							This response is important for our ability to learn from mistakes,
@@ -42,23 +50,26 @@ function ServicesMainInfo() {
 							of all kinds, including the most common of all:
             </p>
           </div>
-          <div id="services_topInfo_txt_bot">
-            <p>
-							This response is important for our ability to learn from mistakes,
-							but it alsogives rise to self-criticism, because it is part of the
-							threat-protection system. In other words, what keeps us safe can
-							go too far, and keep us too safe. In fact it can trigger
-							self-censoring.
-            </p>
-            <p>
-							One touch of a red-hot stove is usually all we need to avoid that
-							kind of discomfort in the future. The same is true as we
-							experience the emotional sensation of stress from our first
-							instances of social rejection or ridicule. We quickly learn to
-							fear and thus automatically avoid potentially stressful situations
-							of all kinds, including the most common of all:
-            </p>
-          </div>
+          
+          {window.innerWidth > 768 ? (
+            <div id="services_topInfo_txt_bot">
+              <p>
+								This response is important for our ability to learn from
+								mistakes, but it alsogives rise to self-criticism, because it is
+								part of the threat-protection system. In other words, what keeps
+								us safe can go too far, and keep us too safe. In fact it can
+								trigger self-censoring.
+              </p>
+              <p>
+								One touch of a red-hot stove is usually all we need to avoid
+								that kind of discomfort in the future. The same is true as we
+								experience the emotional sensation of stress from our first
+								instances of social rejection or ridicule. We quickly learn to
+								fear and thus automatically avoid potentially stressful
+								situations of all kinds, including the most common of all:
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
       <div id="ServicesMainInfoPhoto">

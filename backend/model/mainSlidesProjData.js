@@ -7,6 +7,7 @@ const mainSlidesProjData = new Schema({
 	name: String,
 	description: String,
 	image: String,
+  imagewebp: String,
 });
 
 const MainSlidesProj = mongoose.model("mainslidesprojdatas", mainSlidesProjData);

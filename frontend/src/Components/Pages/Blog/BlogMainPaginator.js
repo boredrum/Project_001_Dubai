@@ -7,8 +7,13 @@ function BlogMainPaginator() {
   const dispatch = useDispatch();
   const blogDatas = useSelector((state) => state.blogDatas.items);
 
+  const breakPointTablet = 768;
+  const breakPointPhone = 320;
+
   const [currentPage, setCurrentPage] = useState(1);
-  const blocksPerPage = 12;
+  const [blocksPerPage, setBlocksPerPage] = useState(12);
+
+
   const lastIndex = currentPage * blocksPerPage;
   const firstIndex = lastIndex - blocksPerPage;
   const records = blogDatas.slice(firstIndex, lastIndex);
@@ -40,6 +45,16 @@ function BlogMainPaginator() {
     }
   };
 
+  useEffect(()=>{
+    if (window.innerWidth <= breakPointPhone){
+      setBlocksPerPage(5);
+    } else if(window.innerWidth <= breakPointTablet){
+      setBlocksPerPage(6);
+    } else {
+      setBlocksPerPage(12);
+    }
+  }, []);
+  
   const maxVisiblePages = 6; // How many pages we want to see at the same time
   const pageNumbers = [];
 

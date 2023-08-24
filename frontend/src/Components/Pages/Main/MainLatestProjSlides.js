@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -14,6 +14,9 @@ function MainLatestProjSlides() {
   const mainProjSlidesDatas = useSelector(
     (state) => state.mainDatas.projSlidesMainItems,
   );
+
+  const [swiperWidth, setSwiperWidth] = useState(1800);
+  const [swiperMargin, setSwiperMargin] = useState(30);
 
   useEffect(() => {
     dispatch(getMainProjSlidesDatas());
@@ -34,6 +37,23 @@ function MainLatestProjSlides() {
       );
     },
   };
+
+  const breakPointTablet = 768;
+  const breakPointPhone = 320;
+
+  useEffect(()=>{
+    if (window.innerWidth <= breakPointPhone){
+      setSwiperWidth(288);
+      setSwiperMargin(7);
+    } else if(window.innerWidth <= breakPointTablet){
+      setSwiperWidth(691);
+      setSwiperMargin(10);
+    } else {
+      setSwiperWidth(1800);
+      setSwiperMargin(30);
+    }
+  }, []);
+  
 
   return (
     <div id="main_slides_proj">
@@ -58,8 +78,8 @@ function MainLatestProjSlides() {
         <Swiper
           className="main_slides_proj_slider_swiper"
           modules={[Pagination, A11y, Autoplay]}
-          width={1800}
-          spaceBetween={30}
+          width={swiperWidth}
+          spaceBetween={swiperMargin}
           slidesPerView={4}
           slidesPerGroup={4}
           loop={true}
@@ -69,6 +89,7 @@ function MainLatestProjSlides() {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
           }}
+          initialSlide={0}
         >
           {mainProjSlidesDatas.map((data) => {
             return (
@@ -81,13 +102,6 @@ function MainLatestProjSlides() {
               </SwiperSlide>
             );
           })}
-          {/* <SwiperSlide>Slide 1</SwiperSlide>
-					<SwiperSlide>Slide 2</SwiperSlide>
-					<SwiperSlide>Slide 3</SwiperSlide>
-					<SwiperSlide>Slide 4</SwiperSlide>
-					<SwiperSlide>Slide 5</SwiperSlide>
-					<SwiperSlide>Slide 6</SwiperSlide>
-					<SwiperSlide>Slide 7</SwiperSlide> */}
         </Swiper>
       </div>
     </div>
