@@ -51,11 +51,11 @@ function MainTopSlider() {
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        // autoplay={{
-        //   delay: 5000,
-        //   pauseOnMouseEnter: true,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 5000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        }}
         pagination={pagination}
         loop={true}
       >

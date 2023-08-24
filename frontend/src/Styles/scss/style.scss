@@ -602,6 +602,44 @@ footer {
 			font-weight: 300;
 			line-height: 29px;
 		}
+		#footer_socials {
+			width: 200px;
+			height: 20px;
+			display: flex;
+			a {
+				margin: 0 10px;
+				width: 18px;
+				height: 18px;
+				background-color: transparent;
+				cursor: pointer;
+				&.facebook {
+					background-image: url(../../Pictures/interface/Facebook.svg);
+					background-size: contain;
+				}
+				&.twitter {
+					background-image: url(../../Pictures/interface/Twitter.svg);
+					background-size: contain;
+				}
+				&.youtube {
+					background-image: url(../../Pictures/interface/Youtube.svg);
+					background-size: contain;
+				}
+				&.instagram {
+					background-image: url(../../Pictures/interface/Instagram.svg);
+					background-size: contain;
+				}
+				&.linkedin {
+					background-image: url(../../Pictures/interface/LinkedIn.svg);
+					background-size: contain;
+				}
+				&:hover {
+					width: 20px;
+					height: 20px;
+					margin: 0 9px;
+					filter: brightness(1.5);
+				}
+			}
+		}
 	}
 }
 #contactUs {
@@ -740,24 +778,10 @@ footer {
 					background-size: contain;
 				}
 				&:hover {
-          width: 30px;
-          height: 30px;
-          margin: 5px 0;
-					&.facebook {
-						filter: brightness(1.5); // Increase brightness on hover
-					}
-					&.twitter {
-						filter: brightness(1.5); // Increase brightness on hover
-					}
-					&.youtube {
-						filter: brightness(1.5); // Increase brightness on hover
-					}
-					&.instagram {
-						filter: brightness(1.5); // Increase brightness on hover
-					}
-					&.linkedin {
-						filter: brightness(1.5); // Increase brightness on hover
-					}
+					width: 30px;
+					height: 30px;
+					margin: 5px 0;
+					filter: brightness(1.5);
 				}
 			}
 		}
