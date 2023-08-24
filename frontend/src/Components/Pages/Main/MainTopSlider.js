@@ -11,6 +11,12 @@ import swiperImageSlide1 from "../../../Pictures/main_topSlider_image1.png";
 import swiperImageSlide2 from "../../../Pictures/main_topSlider_image2.jpg";
 import swiperImageSlide3 from "../../../Pictures/main_topSlider_image3.jpg";
 
+// import facebookLogo from "../../../Pictures/interface/Facebook.svg";
+// import twitterLogo from "../../../Pictures/interface/Facebook.svg";
+// import youtubeLogo from "../../../Pictures/interface/Facebook.svg";
+// import instagramLogo from "../../../Pictures/interface/Facebook.svg";
+// import linkedinLogo from "../../../Pictures/interface/Facebook.svg";
+
 const paginatorTxt = [
   { text: "Lorem Ipsum Dolorem apset" },
   { text: "Lorem Ipsum Dolorem apset" },
@@ -45,14 +51,21 @@ function MainTopSlider() {
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        autoplay={{
-          delay: 5000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 5000,
+        //   pauseOnMouseEnter: true,
+        //   disableOnInteraction: false,
+        // }}
         pagination={pagination}
         loop={true}
       >
+        <div className="main_slides_topSlider_swiper_slide_links">
+          <a className="facebook" href="https://facebook.com/" />
+          <a className="twitter"  href="https://twitter.com/" />
+          <a className="youtube"  href="https://youtube.com/" />
+          <a className="instagram"  href="https://linkedin.com/" />
+          <a className="linkedin"  href="https://instagram.com/" />
+        </div>
         <SwiperSlide>
           <img src={swiperImageSlide1} alt="Dubai day view" />
           <div className="main_slides_topSlider_swiper_slide_links"></div>
@@ -62,7 +75,10 @@ function MainTopSlider() {
             <h1>
 							Welcome home <span>to</span> luxury
             </h1>
-            <button className="main_slides_topSlider_swiper_slide_consult" onClick={() => setIsBookConsultOpen(true)}>
+            <button
+              className="main_slides_topSlider_swiper_slide_consult"
+              onClick={() => setIsBookConsultOpen(true)}
+            >
 							Book a consultation
             </button>
           </div>
@@ -77,7 +93,10 @@ function MainTopSlider() {
             <h1>
 							Welcome home <span>to</span> luxury
             </h1>
-            <button className="main_slides_topSlider_swiper_slide_consult" onClick={() => setIsBookConsultOpen(true)}>
+            <button
+              className="main_slides_topSlider_swiper_slide_consult"
+              onClick={() => setIsBookConsultOpen(true)}
+            >
 							Book a consultation
             </button>
           </div>
@@ -92,7 +111,10 @@ function MainTopSlider() {
             <h1>
 							Welcome home <span>to</span> luxury
             </h1>
-            <button className="main_slides_topSlider_swiper_slide_consult" onClick={() => setIsBookConsultOpen(true)}>
+            <button
+              className="main_slides_topSlider_swiper_slide_consult"
+              onClick={() => setIsBookConsultOpen(true)}
+            >
 							Book a consultation
             </button>
           </div>

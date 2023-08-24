@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const BookConsultaion = ({setIsBookConsultOpen}) => {
+
+  // On mount of this component we're adding noScroll class to remove scrolling
+  useEffect(() => {
+    document.body.classList.add("noScroll");
+
+    return () => {
+      document.body.classList.remove("noScroll");
+    };
+  }, []);
 
   return (
     <>
