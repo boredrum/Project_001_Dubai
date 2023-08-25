@@ -173,6 +173,19 @@ function Header() {
             {isNavContactActive}
           </div>
         </div>
+        {window.innerWidth <= 320 ? <>
+          <button id="btn_consultate" onClick={() => setIsBookConsultOpen(true)}>
+            Book a consultation
+          </button>
+          <div id="header_phone">
+            <a href="tel:+380991111111">+3 (099) 111-11-11</a>
+          </div>
+          <div id="header_set_lang">
+            <a href="#">EN</a>
+            <a href="#">UA</a>
+          </div>
+        </> 
+          : null}
       </div>}
     </header>
   );

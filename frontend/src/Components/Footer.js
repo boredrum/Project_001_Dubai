@@ -209,11 +209,12 @@ function Footer() {
       </div>
       {isBookConsultOpen && <BookConsultaion setIsBookConsultOpen={setIsBookConsultOpen} />}
       <div id="footer_lower">
-        <div id="footer_copy">
-          <p>
-            Copyright © 2023 Dubai Realty
-          </p>
-        </div>
+        {window.innerWidth <= 320 ? null : 
+          <div id="footer_copy">
+            <p>
+              Copyright © 2023 Dubai Realty
+            </p>
+          </div>}
         <div id="footer_socials">
           <a className="facebook" href="https://facebook.com/" />
           <a className="twitter"  href="https://twitter.com/" />
@@ -221,6 +222,13 @@ function Footer() {
           <a className="instagram"  href="https://linkedin.com/" />
           <a className="linkedin"  href="https://instagram.com/" />
         </div>
+        {window.innerWidth <= 320 ? 
+          <div id="footer_copy">
+            <p>
+              Copyright © 2023 Dubai Realty
+            </p>
+          </div> 
+          : null}
       </div>
     </footer>
   );
