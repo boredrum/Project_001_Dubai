@@ -1,8 +1,15 @@
 import React from "react";
+import { isWebpSupported } from "react-image-webp/dist/utils";
+
 import ServicesMainInfoPhoto from "../../../Pictures/ServicesMainInfo_main_photo.png";
 import Services_threePhotosView_left_top from "../../../Pictures/Services_threePhotosView_left_top.png";
 import Services_threePhotosView_left_bot from "../../../Pictures/Services_threePhotosView_left_bot.png";
 import Services_threePhotosView_right from "../../../Pictures/Services_threePhotosView_right.png";
+
+import ServicesMainInfoPhotowebp from "../../../Pictures/webp/ServicesMainInfo_main_photo.webp";
+import Services_threePhotosView_left_topwebp from "../../../Pictures/webp/Services_threePhotosView_left_top.webp";
+import Services_threePhotosView_left_botwebp from "../../../Pictures/webp/Services_threePhotosView_left_bot.webp";
+import Services_threePhotosView_rightwebp from "../../../Pictures/webp/Services_threePhotosView_right.webp";
 
 function ServicesMainInfo() {
   return (
@@ -73,7 +80,7 @@ function ServicesMainInfo() {
         </div>
       </div>
       <div id="ServicesMainInfoPhoto">
-        <img src={ServicesMainInfoPhoto} alt="Photo of Dubai view" />
+        <img src={isWebpSupported ? ServicesMainInfoPhotowebp : ServicesMainInfoPhoto} alt="Photo of Dubai view" />
       </div>
       <div id="services_methods_txt">
         <h2>Methods for Everyone</h2>
@@ -114,11 +121,11 @@ function ServicesMainInfo() {
       </div>
       <div id="services_threePhotosView">
         <div id="services_threePhotosView_left">
-          <img src={Services_threePhotosView_left_top} alt="Dubai night view" />
-          <img src={Services_threePhotosView_left_bot} alt="Dubai sunrise" />
+          <img src={isWebpSupported ? Services_threePhotosView_left_topwebp : Services_threePhotosView_left_top} alt="Dubai night view" />
+          <img src={isWebpSupported ? Services_threePhotosView_left_botwebp : Services_threePhotosView_left_bot} alt="Dubai sunrise" />
         </div>
         <div id="services_threePhotosView_right">
-          <img src={Services_threePhotosView_right} alt="Dubai daylight" />
+          <img src={isWebpSupported ? Services_threePhotosView_rightwebp : Services_threePhotosView_right} alt="Dubai daylight" />
         </div>
       </div>
       <div id="services_skills">

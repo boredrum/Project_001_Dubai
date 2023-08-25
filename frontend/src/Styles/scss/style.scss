@@ -1952,6 +1952,8 @@ main {
 		}
 		#services_proposals_block_left {
 			background-image: url(../../Pictures/services_proposals_block_left.png);
+      background-repeat: no-repeat;
+      background-size: cover;
 		}
 		#services_proposals_mid {
 			display: flex;
@@ -2024,6 +2026,8 @@ main {
 		}
 		#services_proposals_right {
 			background-image: url(../../Pictures/services_proposals_right.png);
+      background-repeat: no-repeat;
+      background-size: cover;
 		}
 	}
 }
@@ -6934,18 +6938,18 @@ main {
 	//----- Service page ---------------------------------------------------------------------------
 
 	#services_appartPreview {
-		max-width: 690px;
-		height: 295px;
+		max-width: 286px;
+		height: 191px;
 		margin: 0 auto;
 		#services_appartPreview_txt {
-			padding-top: 130px;
-			padding-left: 58px;
-			max-width: 417px;
+			padding-top: 80px;
+			padding-left: 22px;
+			max-width: 247px;
 			background-color: transparent;
 			h2 {
 				color: #fff;
 				font-family: "Work Sans";
-				font-size: 16px;
+				font-size: 14px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: 26px;
@@ -6953,7 +6957,7 @@ main {
 			}
 			h3 {
 				margin-top: 3px;
-				font-size: 40px;
+				font-size: 24px;
 				line-height: normal;
 				span {
 					color: #fcd54c;
@@ -6963,16 +6967,21 @@ main {
 		}
 	}
 	#services_topInfo {
-		max-width: 690px;
-		margin: 17px auto 0;
+		max-width: 286px;
+		margin: 20px auto 0;
 		#services_topInfo_links {
 			h2 {
+        width: 276px;
+        height: 14px;
 				color: #929292;
 				font-family: "Work Sans";
-				font-size: 14px;
+				font-size: 12px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 				a {
 					margin-right: 15px;
 					color: #fff;
@@ -6995,12 +7004,12 @@ main {
 			}
 		}
 		#services_topInfo_txt {
-			max-width: 728px;
+			max-width: 286px;
 			margin: 76px auto 0;
 			h2 {
 				color: #929292;
 				font-family: "Work Sans";
-				font-size: 16px;
+				font-size: 14px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: 26px;
@@ -7012,10 +7021,10 @@ main {
 				margin: 20px auto;
 				color: #fff;
 				font-family: "Gilroy Bold";
-				font-size: 25px;
+				font-size: 24px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 45px;
+				line-height: normal;
 			}
 			#services_topInfo_txt_top {
 				margin-bottom: 40px;
@@ -7032,20 +7041,21 @@ main {
 		}
 	}
 	#ServicesMainInfoPhoto {
-		max-width: 690px;
-		height: 436px;
-		margin: 40px auto 50px;
+		max-width: 286px;
+		height: 252px;
+		margin: 30px auto;
 		img {
 			width: 100%;
+      height: 100%;
 		}
 	}
 	#services_methods_txt {
-		max-width: 690px;
-		margin: 50px auto 0;
+		max-width: 286px;
+		margin: 30px auto 0;
 		h2 {
 			color: #fff;
 			font-family: "Gilroy Bold";
-			font-size: 25px;
+			font-size: 24px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: 35px;
@@ -7062,18 +7072,21 @@ main {
 	}
 	#services_review {
 		margin: 50px auto 0;
-		max-width: 690px;
-		height: 259px;
+		max-width: 286px;
+		height: 343px;
 		border: 4px solid #fcd54c;
 		#services_review_inner {
-			margin: 35px 70px 30px 40px;
-			width: 615px;
-			height: 186px;
+			margin: 0;
+			width: 284px;
+			height: 341px;
 			display: flex;
+      flex-direction: column;
 			#services_review_inner_comas {
-				padding-top: 20px;
+        background-color: transparent;
+        margin: 8px 0 0 12px;
+        padding-top: 0;
 				width: 86px;
-				height: 186px;
+				height: 60px;
 				display: flex;
 				justify-content: left;
 				align-items: flex-end;
@@ -7082,21 +7095,25 @@ main {
 				font-size: 100px;
 				font-style: normal;
 				font-weight: 600;
+        p{
+          background-color: transparent;
+          margin: auto 0;
+        }
 			}
 			#services_review_inner_mainTxt {
-				width: 530px;
+				width: 244px;
 				p {
-					margin-top: 0;
-					margin-bottom: 28px;
+          margin: 30px 0 0 19px;
 					color: #fff;
 					font-family: "Gilroy";
-					font-size: 20px;
+					font-size: 18px;
 					font-style: normal;
 					font-weight: 600;
-					line-height: 35px;
+					line-height: 27px;
 				}
 				h2 {
-					margin: 0;
+					margin: 10px 0 0 auto;
+          width: 94px;
 					color: #fff;
 					font-family: "Work Sans";
 					font-size: 16px;
@@ -7105,7 +7122,8 @@ main {
 					line-height: 26px;
 				}
 				h3 {
-					margin: 0;
+					margin: 0 0 0 auto;
+          width: 94px;
 					color: #929292;
 					font-family: "Work Sans";
 					font-size: 16px;
@@ -7117,37 +7135,45 @@ main {
 		}
 	}
 	#services_threePhotosView {
-		max-width: 690px;
+		max-width: 286px;
 		margin: 50px auto 0;
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+    flex-direction: column;
+    & img {
+      margin-bottom: 10px;
+    }
 		#services_threePhotosView_left {
-			max-width: 330px;
+			max-width: 286px;
 			width: auto;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			img {
-				max-width: 330px;
+				max-width: 286px;
 				width: auto;
-				height: 188px;
+				height: 165px;
 			}
 		}
 		#services_threePhotosView_right {
-			max-width: 330px;
-			width: auto;
+			max-width: 286px;
+			min-width: 286px;
+      margin: 0;
 			img {
-				max-width: 330px;
+				max-width: 286px;
+        min-width: 286px;
 				width: auto;
-				height: 405px;
+				height: 300px;
 			}
 		}
 	}
 	#services_skills {
-		max-width: 1110px;
-		margin: 125px auto 0;
+		max-width: 286px;
+		margin: 50px auto 0;
 		display: flex;
+    flex-direction: column;
+    align-items: center;
 		justify-content: space-evenly;
 		#services_skills_card_right {
 			h2 {
@@ -7165,6 +7191,7 @@ main {
 		div {
 			display: flex;
 			height: 70px;
+      margin-bottom: 20px;
 			h2 {
 				margin: 0;
 				margin-right: 24px;
@@ -7188,13 +7215,13 @@ main {
 	}
 	#service_challenge {
 		width: auto;
-		max-width: 690px;
-		margin: 60px auto 0;
+		max-width: 286px;
+		margin: 50px auto 0;
 		h2 {
 			margin-bottom: 50px;
 			color: #fff;
 			font-family: "Gilroy Bold";
-			font-size: 25px;
+			font-size: 24px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: 35px;
@@ -7221,31 +7248,31 @@ main {
 			margin: 65px 0 100px;
 			color: #929292;
 			font-family: "Work Sans";
-			font-size: 16px;
+			font-size: 14px;
 			font-style: normal;
 			font-weight: 400;
-			line-height: 26px;
+			line-height: 21px;
 		}
 		#service_challenge_topTxt {
 			border-bottom: solid 1px #929292;
 		}
 	}
 	#servicesPackages_table {
-		max-width: 690px;
+		max-width: 286px;
 		margin: 50px auto 0;
 		div {
 			p {
 				color: #fff;
 				font-family: "Work Sans";
-				font-size: 16px;
+				font-size: 8px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 26px;
+				line-height: normal;
 			}
 			h2 {
 				color: #fcd54c;
 				font-family: "Roboto";
-				font-size: 16px;
+				font-size: 12px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: 26px;
@@ -7260,10 +7287,10 @@ main {
 			p {
 				color: #272727;
 				font-family: "Gilroy";
-				font-size: 16px;
+				font-size: 12px;
 				font-style: normal;
 				font-weight: 400;
-				line-height: 26px;
+				line-height: normal;
 				background-color: transparent;
 			}
 		}
@@ -7302,8 +7329,8 @@ main {
 	}
 
 	#services_proposals {
-		margin: 70px auto;
-		max-width: 690px;
+		margin: 50px auto;
+		max-width: 286px;
 		#services_proposals_head {
 			display: flex;
 			justify-content: space-between;
@@ -7311,12 +7338,13 @@ main {
 			h2 {
 				color: #fff;
 				font-family: "Gilroy Bold";
-				font-size: 25px;
+				font-size: 24px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 45px;
+				line-height: normal;
 			}
 			a {
+        display: none;
 				margin-right: 40px;
 				text-decoration: none;
 				color: #929292;
@@ -7353,13 +7381,15 @@ main {
 		}
 		#services_proposals_blocks {
 			display: flex;
+      flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
 			margin-top: 30px;
 			div {
-				width: calc(min(216px, 29vw));
-				max-width: 216px;
-				height: calc(min(216px, 29vw));
+				width: 286px;
+				max-width: 286px;
+				height: 216px;
+        margin-bottom: 20px;
 				h2 {
 					font-size: 0;
 				}
@@ -7371,9 +7401,10 @@ main {
 				display: flex;
 				flex-direction: column;
 				background-color: #fcd54c;
-				padding-left: calc(min(2vw, 35px));
-				padding-right: calc(min(2vw, 35px));
-				max-width: 280px;
+				padding-left: 20px;
+				padding-right: 20px;
+        width: 246px;
+				max-width: 246px;
 				h2 {
 					margin-top: 23px;
 					padding: 0;
@@ -7446,15 +7477,18 @@ main {
 	//----- Blog page ---------------------------------------------------------------------------
 
 	#blog_main {
-		max-width: 690px;
+		max-width: 286px;
 		margin: 0 auto 26px auto;
 		h2 {
 			color: #929292;
 			font-family: "Work Sans";
-			font-size: 14px;
+			font-size: 12px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 			a {
 				margin-right: 15px;
 				color: #fff;
@@ -7482,12 +7516,13 @@ main {
 			h1 {
 				color: #fff;
 				font-family: "Gilroy Bold";
-				font-size: 50px;
+				font-size: 30px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 80px;
+				line-height: normal;
 			}
 			input {
+        display: none;
 				margin-left: 25px;
 				width: 510px;
 				height: 47px;
@@ -7498,8 +7533,8 @@ main {
 			}
 		}
 		#blog_main_apparts {
-			max-width: 692px;
-			margin: 70px auto 0;
+			max-width: 286px;
+			margin: 30px auto 0;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
@@ -7508,32 +7543,34 @@ main {
 				display: flex;
 				justify-content: space-between;
 				div {
-					width: 332px;
+					width: 286px;
 					height: 577px;
 					display: flex;
 					flex-direction: column;
 					img {
-						width: 332px;
+						width: 286px;
 						height: 329px;
 						background-color: #fcd54c;
 					}
 					div {
-						width: 330px;
+						width: 284px;
 						height: 248px;
 						border: solid 1px #fcd54c;
 						h2 {
 							margin: 20px 22px 23px 20px;
-							width: 290px;
+							width: 244px;
 							color: #fff;
 							font-family: "Gilroy Bold";
-							font-size: 25px;
+							font-size: 24px;
 							font-style: normal;
 							font-weight: 700;
 							line-height: 35px;
+              overflow: visible;
+              white-space: normal;
 						}
 						p {
 							margin: 0 30px 13px 20px;
-							max-width: 290px;
+							max-width: 247px;
 							height: 78px;
 							color: #929292;
 							font-family: "Gilroy";
@@ -7546,7 +7583,7 @@ main {
 						}
 						a {
 							position: relative;
-							margin: auto auto 10px 30px;
+							margin: auto auto 10px 20px;
 							width: 92px;
 							color: #fff;
 							font-family: "Work Sans";
@@ -7666,17 +7703,17 @@ main {
 	//----- Contact page ---------------------------------------------------------------------------
 
 	#contact_title {
-		max-width: 690px;
+		max-width: 286px;
 		margin: 30px auto;
 		color: #fff;
 		font-family: "Gilroy Bold";
-		font-size: 50px;
+		font-size: 30px;
 		font-style: bold;
 		font-weight: 700;
 		line-height: normal;
 	}
 	#contact_links {
-		max-width: 690px;
+		max-width: 286px;
 		margin: 0 auto;
 		color: #929292;
 		font-family: "Work Sans";
@@ -7684,6 +7721,9 @@ main {
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 		a {
 			margin-right: 15px;
 			color: #fff;
@@ -7710,18 +7750,19 @@ main {
 		width: calc(min(690px, 96.67vw));
 		height: 596px;
 		display: flex;
+    flex-direction: column;
 		justify-content: center;
 		position: relative;
 		#map_modal_block {
 			position: absolute;
-			width: 100%;
-			height: 100%;
+			width: 0;
+			height: 0;
 			background-color: transparent;
 			z-index: 2;
 			cursor: pointer;
 		}
 		#map_modal {
-			position: absolute;
+			position: relative;
 			top: 120px;
 			left: calc(min(32px, 5vw));
 			width: 273px;
@@ -7790,10 +7831,16 @@ main {
 			}
 		}
 		#map_block {
+      position: relative;
+      display: inline;
+      margin: 150px 0 150px 0;
+      min-width: 286px;
+      min-height: 351px;
 			iframe {
+        position: absolute;
+				width: 80%;
 				height: 100%;
 				z-index: 1;
-				width: calc(min(690px, 96.67vw));
 				margin-left: 20px;
 				margin-right: 20px;
 			}
@@ -7820,9 +7867,11 @@ main {
 		#contact_contact_form_inputs {
 			margin-top: 70px;
 			display: flex;
+      flex-direction: column;
 			justify-content: space-between;
 			input {
-				width: 181px;
+				width: 263px;
+        max-width: 280px;
 				height: 50px;
 				padding: 0 0 0 23px;
 				margin-bottom: 30px;
@@ -7837,18 +7886,19 @@ main {
 			}
 		}
 		input {
-			max-width: 690px;
+			max-width: 260px;
 			height: 218px;
 			border: 1px solid #c9c9c9;
-			padding: 26px 28px;
+			padding: 26px 0 0 27px;
 			::placeholder {
 				text-align: end;
 			}
 		}
 		button {
 			margin-top: 30px;
-			width: 151px;
+			width: 288px;
 			height: 52px;
+      min-height: 52px;
 			background-color: #fcd54c;
 			border: none;
 			color: #272727;
